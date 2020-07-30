@@ -3,7 +3,7 @@ import Menu from './componentes/Menu'
 import dadosiniciais from './data/dados_iniciais.json';
 import BannerMain from './componentes/BannerMain';
 import Carousel from './componentes/Carousel';
-import Footer from './componentes/Carousel';
+import Footer from './componentes/Footer';
 
 function App() {
   return (
