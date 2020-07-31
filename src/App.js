@@ -7,36 +7,45 @@ import Footer from './componentes/Footer';
 
 function App() {
   return (
-  <div style={{background: "#141414"}}>
-
+   <div style={{ background:"#141414" }}>
     <Menu/>
 
-    <BannerMain
+    < BannerMain
     videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
     url={dadosIniciais.categorias[0].videos[0].url}
-    videoDescription={"O que é Front-end? Trabalhando na área"}
-    />
+    videoDescription={"O que é Front-end? Trabalhando na area"}
+     />
+ 
+ <Carousel
+ ignoreFirstVideo
+ category={dadosIniciais.categorias[0]}
+ />
 
-    <Carousel
-    ignoreFirstVideo
-    category={dadosIniciais.categorias[0]}    
-      />
+<Carousel
+ignoreFirstVideo
+category={dadosIniciais.categorias[1]}
+/>
 
-      <Carousel
-      category={dadosIniciais.categorias[1]}
-      />
-      
-      <Carousel
-      category={dadosIniciais.categorias[2]}
-      />
+<Carousel
+ignoreFirstVideo
+category={dadosIniciais.categorias[2]}
+/>
 
-      <Carousel
-      category={dadosIniciais.categorias[3]}
-      />
-      <Footer
-      category={dadosIniciais.categorias[0]}
-      />
-    </div>
+<Carousel
+ignoreFirstVideo
+category={dadosIniciais.categorias[3]}
+/>
+
+<Carousel
+ignoreFirstVideo
+category={dadosIniciais.categorias[4]}
+/>
+
+<Footer
+ignoreFirstVideo
+category={dadosIniciais.categorias[0]}
+/>
+  </div>
   );
 }
 
