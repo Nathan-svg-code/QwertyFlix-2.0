@@ -43,7 +43,7 @@ category={dadosIniciais.categorias[4]}
 
 <Footer
 ignoreFirstVideo
-category={dadosIniciais.categorias[0]}
+category={dadosIniciais.categorias[1]}
 />
   </div>
   );
